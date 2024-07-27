@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
                 ('lang', models.CharField(max_length=16)),
                 ('title', models.CharField(db_index=True, max_length=256)),
                 ('search_title', models.CharField(db_index=True, default=None, max_length=256)),
-                ('annotation', models.CharField(max_length=10000)),
+                ('annotation', models.CharField(max_length=20000)),
                 ('lang_code', models.IntegerField(db_index=True, default=9)),
                 ('avail', models.IntegerField(db_index=True, default=0)),
                 ('authors', models.ManyToManyField(through='opds_catalog.bauthor', to='opds_catalog.Author')),
