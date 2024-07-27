@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 from django.core.exceptions import ObjectDoesNotExist
-from django.utils.translation import ugettext_lazy as _lazy
+from django.utils.translation import gettext_lazy as _lazy
 
 counter_allbooks = 'allbooks'
 counter_allcatalogs = 'allcatalogs'
@@ -24,8 +24,8 @@ SIZE_CAT_PATH        = SIZE_BOOK_PATH
 SIZE_AUTHOR_NAME     = 128
 
 SIZE_GENRE           = 32
-SIZE_GENRE_SECTION   = 64
-SIZE_GENRE_SUBSECTION = 100
+SIZE_GENRE_SECTION   = 100
+SIZE_GENRE_SUBSECTION = 200
 
 SIZE_SERIES          = 150
 
