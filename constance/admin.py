@@ -5,6 +5,7 @@ from operator import itemgetter
 import hashlib
 import os
 import sys
+import six
 
 from django import forms, VERSION
 from django.apps import apps
@@ -80,7 +81,7 @@ def parse_additional_fields(fields):
 
 FIELDS.update(parse_additional_fields(settings.ADDITIONAL_FIELDS))
 
-if not sys.version_info[0] == 3:
+if not six.PY3:
     FIELDS.update({
         long: INTEGER_LIKE,
         unicode: STRING_LIKE,
