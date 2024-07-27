@@ -104,8 +104,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('genre', models.CharField(db_index=True, max_length=32)),
-                ('section', models.CharField(db_index=True, max_length=64)),
-                ('subsection', models.CharField(db_index=True, max_length=100)),
+                ('section', models.CharField(db_index=True, max_length=100)),
+                ('subsection', models.CharField(db_index=True, max_length=200)),
             ],
         ),
         migrations.CreateModel(
