@@ -6,7 +6,7 @@ XXX references to utf-8 need further investigation.
 import io
 import os
 import re
-import imp
+import importlib
 import sys
 import time
 import stat
