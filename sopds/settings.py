@@ -30,6 +30,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# For using with reverse proxy
+CSRF_TRUSTED_ORIGINS = []
+
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.auth',    
